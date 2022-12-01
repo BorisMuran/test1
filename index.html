@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
+	<title>Skarpety.pl</title>
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge">
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="main..css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+	
+	<!--[if lt IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<![endif]-->
+	
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<!-- Brand/logo -->
+		<a class="navbar-brand" href="#">
+		  <img src="logo.jpg" alt="logo" style="width:40px;">
+		</a>
+		
+		<!-- Links -->
+		<ul class="navbar-nav">
+		  <li class="nav-item">
+			<a class="nav-link" href="index.html">Strona główna</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="rabaty.html">Rabaty</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="kontakt.html">Kontakt</a>
+		  </li>
+		</ul>
+	  </nav>
+	  
+	  
+	<main>
+		
+		<section class="jumpers">
+		
+			<div class="container">
+				
+				<header>
+					
+					<h1>Bestsellery</h1>
+					<form>
+						<label for="fname">Podaj kod rabatowy:</label>
+						<input type="text" id="kod" ><br><br>
+						<input type="button" value="otrzymaj" onclick="rabat()">
+						
+						<script>
+							var o =0;
+							var oo=parseFloat(o);
+							var p=0;
+							
+							function dodawanie(){
+								
+								var cena = document.getElementById("cena").value;
+								var ccena=parseFloat(cena);
+								o=Math.round(o+ccena);
+								var oo=parseFloat(o);
+								document.getElementById("sumacen").innerHTML ="Wartość koszyka: "+ oo+"zł";
+								p=p+1;
+								document.getElementById("wynikk").innerHTML = p;
+								
+								return false;
+
+								
+						}
+						function rabat(){
+								
+								var kod = document.getElementById("kod").value;
+								
+								if (kod==1234) {
+									alert("Prawidłowy kod "+kod);
+									var x = Math.round(o*0.85);
+									document.getElementById("sumacen").innerHTML ="Wartość koszyka po rabacie: "+x+zł;
+									return false;
+								} else {
+									alert("Nieprawidłowy kod "+kod);
+								}
+								return false;
+						}
+
+						</script>
+					</form>
+						
+				</header>
+				
+				
+<div id="kosz">
+	<div id="sumacen">Wartość koszyka: 0zł</div>
+    Elementy w koszyku: 
+	<div id="wynikk"></div>
+    <span id="lblShow"></span>
+</br>
+</div>
+				<div id="counter"></div>
+				<div class="row">
+					
+					<div class="col-sm-6 col-md-5 offset-md-1">
+					
+						<figure>
+							<a href="#"><img src="img/1.jpg" alt="skarpety"></a>
+							<figcaption>Oh Deer!<form> <input type="number" readonly value="12.99" id="cena">zł<div id="wynik"></div></br><input type="button" name="btnCount" value="Dodaj do koszyka" onclick="dodawanie()" onclick="return Count();" id="btnCount" /></form></figcaption>
+						</figure>
+					
+					</div>
+					
+					<div class="col-sm-6 col-md-5">
+					
+						<figure>
+							<a href="#"><img src="img/2.png" alt="skarpety"></a>
+							<figcaption> Beardman <input class="kod1"number readonly value="12.99">zł<div id="wynik"></div></br><input type="submit" name="btnCount" value="Dodaj do koszyka" onclick="dodawanie()"onclick="return Count();" id="btnCount" /></figcaption>
+						</figure>
+					
+					</div>
+
+					<div class="col-sm-6 col-md-4">
+					
+						<figure>
+							<a href="#"><img src="img/3.png" alt="skarpety"></a>
+							<figcaption>Scotch Whisky <input number readonly value="12.99">zł<div id="wynik"></div></br><input type="submit" name="btnCount" value="Dodaj do koszyka"onclick="dodawanie()" onclick="return Count();" id="btnCount" /></figcaption>
+						</figure>
+					
+					</div>
+
+					<div class="col-sm-6 col-md-4">
+					
+						<figure>
+							<a href="#"><img src="img/4.jpg" alt="skarpety"></a>
+							<figcaption>Farma <input number readonly value="12.99">zł<div id="wynik"></div></br><input type="submit" name="btnCount" value="Dodaj do koszyka" onclick="dodawanie()"onclick="return Count();" id="btnCount" /></figcaption>
+						</figure>
+					
+					</div>
+
+					<div class="col-sm-6 col-md-4">
+					
+						<figure>
+							<a href="#"><img src="img/5.jpg" alt="skarpety"></a>
+							<figcaption>Co ma piernik do wiatraka <input number readonly value="12.99">zł<div id="wynik"></div></br><input type="submit" name="btnCount" value="Dodaj do koszyka"onclick="dodawanie()"onclick="return Count();" id="btnCount" /></figcaption>
+						</figure>
+					
+					</div>
+
+					<div class="col-sm-6 col-md-4">
+					
+						<figure>
+							<a href="#"><img src="img/6.jpg" alt="skarpety"></a>
+							<figcaption>Fluffy Alpaca <input number readonly value="12.99">zł<div id="wynik"></div></br><input type="submit" name="btnCount" value="Dodaj do koszyka"onclick="dodawanie()" onclick="return Count();" id="btnCount" /></figcaption>
+						</figure>
+					
+					</div>
+
+					<div class="col-sm-6 col-md-4">
+					
+						<figure>
+							<a href="#"><img src="img/7.jpg" alt="skarpety"></a>
+							<figcaption>Coffee Time <input number readonly value="12.99">zł<div id="wynik"></div></br><input type="submit" name="btnCount" value="Dodaj do koszyka" onclick="dodawanie()"onclick="return Count();" id="btnCount" /></figcaption>
+						</figure>
+					
+					</div>
+
+					<div class="col-sm-6 col-md-4">
+					
+						<figure>
+							<a href="#"><img src="img/8.jpg" alt="skarpety"></a>
+							<figcaption>Renifer <input number readonly value="12.99">zł<div id="wynik"></div></br><input type="submit" name="btnCount" value="Dodaj do koszyka" onclick="dodawanie()"onclick="return Count();" id="btnCount" /></figcaption>
+						</figure>
+					
+					</div>
+					
+					<div class="col-sm-6 col-md-3">
+					
+						<figure>
+							<a href="#"><img src="img/9.jpg" alt="skarpety"></a>
+							<figcaption>3-pak <input number readonly value="12.99">zł<div id="wynik"></div></br><input type="submit" name="btnCount" value="Dodaj do koszyka" onclick="dodawanie()"onclick="return Count();" id="btnCount" /></figcaption>
+						</figure>
+					
+					</div>
+					
+					<div class="col-sm-6 col-md-3">
+					
+						<figure>
+							<a href="#"><img src="img/10.jpg" alt="skarpety"></a>
+							<figcaption>Fishing <input number readonly value="12.99">zł<div id="wynik"></div></br><input type="submit" name="btnCount" value="Dodaj do koszyka" onclick="dodawanie()"onclick="return Count();" id="btnCount" /></figcaption>
+						</figure>
+					
+					</div>					
+					
+					<div class="col-sm-6 col-md-3">
+					
+						<figure>
+							<a href="#"><img src="img/11.png" alt="skarpety"></a>
+							<figcaption>Tropical Flamingo <input number readonly value="12.99">zł<div id="wynik"></div></br><input type="submit" name="btnCount" value="Dodaj do koszyka" onclick="dodawanie()"onclick="return Count();" id="btnCount" /></figcaption>
+						</figure>
+					
+					</div>						
+					
+					<div class="col-sm-6 col-md-3">
+					
+						<figure>
+							<a href="#"><img src="img/12.png" alt="skarpety"></a>
+							<figcaption>Speedway <input number readonly value="12.99">zł<div id="wynik"></div></br><input type="submit" name="btnCount" value="Dodaj do koszyka"onclick="dodawanie()" onclick="return Count();" id="btnCount" /></figcaption>
+						</figure>
+					
+					</div>	
+				
+				</div>
+				
+			</div>	
+				
+		</section>
+		
+	</main>
+
+
+
+	</script>
+  
+	
+	
+	
+</body>
+</html>
